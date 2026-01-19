@@ -1,0 +1,65 @@
+<template>
+  <header>
+    <h1 class="text-gradient">Pulse Fit</h1>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <small>Created By</small>
+    <a href="https://github.com/karale-vedant" target="_blank">
+      <img
+        alt="pfp"
+        src="data:image/jpeg;base64,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"
+      />
+      <p>vedant-karale</p>
+    </a>
+  </footer>
+</template>
+
+<style scoped>
+header,
+footer,
+main {
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  background: var(--background-muted);
+  border-radius: 4rem;
+  border: 2px solid transparent;
+  transition-duration: 200ms;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-color: rgb(98, 156, 4);
+}
+
+footer a img {
+  max-width: 30px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+}
+</style>
+
+<script setup></script>
